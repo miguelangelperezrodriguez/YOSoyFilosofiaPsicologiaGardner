@@ -34,5 +34,23 @@ namespace YOSoyFilosofiaPsicologiaGardner
             frmyang frm = new frmyang();
             frm.ShowDialog();
         }
+
+        private void sexoYinToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmying frm = new frmying();
+            frm.ShowDialog();
+        }
+
+        private void aceptaciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmlibrealbedrio frm = new frmlibrealbedrio();
+            frm.ShowDialog();
+        }
+
+        private void poderEnElMundoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPoder frm = new frmPoder();
+            frm.ShowDialog();
+        }
     }
 }

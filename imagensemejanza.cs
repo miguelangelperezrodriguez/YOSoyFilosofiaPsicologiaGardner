@@ -59,6 +59,7 @@ namespace YOSoyFilosofiaPsicologiaGardner
             strInsertar = sintensidadpensamiento;
             sb.AppendLine(strInsertar);
 
+
             System.IO.File.WriteAllText(rutaIn, sb.ToString());
 
             bool bok;

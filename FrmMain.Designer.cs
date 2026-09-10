@@ -39,11 +39,13 @@
             cristianismoDinámicoToolStripMenuItem = new ToolStripMenuItem();
             mecanismoDelPensamientoToolStripMenuItem = new ToolStripMenuItem();
             imagenSemejanzaToolStripMenuItem = new ToolStripMenuItem();
+            aceptaciónToolStripMenuItem = new ToolStripMenuItem();
+            toolStripSeparator1 = new ToolStripSeparator();
+            poderEnElMundoToolStripMenuItem = new ToolStripMenuItem();
             laFórmulaInfalibleToolStripMenuItem = new ToolStripMenuItem();
+            leySupremaDeLaArmoníaPerfectaChakrasToolStripMenuItem = new ToolStripMenuItem();
             regalosToolStripMenuItem = new ToolStripMenuItem();
             maravillosoNro7ToolStripMenuItem = new ToolStripMenuItem();
-            aceptaciónToolStripMenuItem = new ToolStripMenuItem();
-            poderEnElMundoToolStripMenuItem = new ToolStripMenuItem();
             statusStrip1.SuspendLayout();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -83,21 +85,22 @@
             // 
             formulaInfalibleToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { sexoYangToolStripMenuItem, sexoYinToolStripMenuItem });
             formulaInfalibleToolStripMenuItem.Name = "formulaInfalibleToolStripMenuItem";
-            formulaInfalibleToolStripMenuItem.Size = new Size(186, 22);
-            formulaInfalibleToolStripMenuItem.Text = "Formula infalible (21)";
+            formulaInfalibleToolStripMenuItem.Size = new Size(212, 22);
+            formulaInfalibleToolStripMenuItem.Text = "Formula infalible (21) [C#]";
             // 
             // sexoYangToolStripMenuItem
             // 
             sexoYangToolStripMenuItem.Name = "sexoYangToolStripMenuItem";
-            sexoYangToolStripMenuItem.Size = new Size(150, 22);
-            sexoYangToolStripMenuItem.Text = "Sexo yang (23)";
+            sexoYangToolStripMenuItem.Size = new Size(204, 22);
+            sexoYangToolStripMenuItem.Text = "Sexo yang (23) >> 16>70";
             sexoYangToolStripMenuItem.Click += sexoYangToolStripMenuItem_Click;
             // 
             // sexoYinToolStripMenuItem
             // 
             sexoYinToolStripMenuItem.Name = "sexoYinToolStripMenuItem";
-            sexoYinToolStripMenuItem.Size = new Size(150, 22);
-            sexoYinToolStripMenuItem.Text = "Sexo yin (22)";
+            sexoYinToolStripMenuItem.Size = new Size(204, 22);
+            sexoYinToolStripMenuItem.Text = "Sexo yin (22) >> 15>60";
+            sexoYinToolStripMenuItem.Click += sexoYinToolStripMenuItem_Click;
             // 
             // metafísicaToolStripMenuItem
             // 
@@ -115,7 +118,7 @@
             // 
             // mecanismoDelPensamientoToolStripMenuItem
             // 
-            mecanismoDelPensamientoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { imagenSemejanzaToolStripMenuItem, aceptaciónToolStripMenuItem, poderEnElMundoToolStripMenuItem });
+            mecanismoDelPensamientoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { imagenSemejanzaToolStripMenuItem, aceptaciónToolStripMenuItem, toolStripSeparator1, poderEnElMundoToolStripMenuItem });
             mecanismoDelPensamientoToolStripMenuItem.Name = "mecanismoDelPensamientoToolStripMenuItem";
             mecanismoDelPensamientoToolStripMenuItem.Size = new Size(250, 22);
             mecanismoDelPensamientoToolStripMenuItem.Text = "Mecanismo del pensamiento (19)";
@@ -127,11 +130,37 @@
             imagenSemejanzaToolStripMenuItem.Text = "Imagen / Semejanza (Visigodo-AlMansur)";
             imagenSemejanzaToolStripMenuItem.Click += imagenSemejanzaToolStripMenuItem_Click;
             // 
+            // aceptaciónToolStripMenuItem
+            // 
+            aceptaciónToolStripMenuItem.Name = "aceptaciónToolStripMenuItem";
+            aceptaciónToolStripMenuItem.Size = new Size(294, 22);
+            aceptaciónToolStripMenuItem.Text = "Aceptación - Libre Albredrío (Alquimia)";
+            aceptaciónToolStripMenuItem.Click += aceptaciónToolStripMenuItem_Click;
+            // 
+            // toolStripSeparator1
+            // 
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(291, 6);
+            // 
+            // poderEnElMundoToolStripMenuItem
+            // 
+            poderEnElMundoToolStripMenuItem.Name = "poderEnElMundoToolStripMenuItem";
+            poderEnElMundoToolStripMenuItem.Size = new Size(294, 22);
+            poderEnElMundoToolStripMenuItem.Text = "Poder en el mundo (Odín)";
+            poderEnElMundoToolStripMenuItem.Click += poderEnElMundoToolStripMenuItem_Click;
+            // 
             // laFórmulaInfalibleToolStripMenuItem
             // 
+            laFórmulaInfalibleToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { leySupremaDeLaArmoníaPerfectaChakrasToolStripMenuItem });
             laFórmulaInfalibleToolStripMenuItem.Name = "laFórmulaInfalibleToolStripMenuItem";
             laFórmulaInfalibleToolStripMenuItem.Size = new Size(250, 22);
             laFórmulaInfalibleToolStripMenuItem.Text = "La fórmula infalible (20)";
+            // 
+            // leySupremaDeLaArmoníaPerfectaChakrasToolStripMenuItem
+            // 
+            leySupremaDeLaArmoníaPerfectaChakrasToolStripMenuItem.Name = "leySupremaDeLaArmoníaPerfectaChakrasToolStripMenuItem";
+            leySupremaDeLaArmoníaPerfectaChakrasToolStripMenuItem.Size = new Size(329, 22);
+            leySupremaDeLaArmoníaPerfectaChakrasToolStripMenuItem.Text = "Ley Suprema de la Armonía Perfecta >> Chakras";
             // 
             // regalosToolStripMenuItem
             // 
@@ -144,18 +173,6 @@
             maravillosoNro7ToolStripMenuItem.Name = "maravillosoNro7ToolStripMenuItem";
             maravillosoNro7ToolStripMenuItem.Size = new Size(115, 20);
             maravillosoNro7ToolStripMenuItem.Text = "Maravilloso Nro. 7";
-            // 
-            // aceptaciónToolStripMenuItem
-            // 
-            aceptaciónToolStripMenuItem.Name = "aceptaciónToolStripMenuItem";
-            aceptaciónToolStripMenuItem.Size = new Size(294, 22);
-            aceptaciónToolStripMenuItem.Text = "Aceptación (Alquimia)";
-            // 
-            // poderEnElMundoToolStripMenuItem
-            // 
-            poderEnElMundoToolStripMenuItem.Name = "poderEnElMundoToolStripMenuItem";
-            poderEnElMundoToolStripMenuItem.Size = new Size(294, 22);
-            poderEnElMundoToolStripMenuItem.Text = "Poder en el mundo (Odín)";
             // 
             // FrmPrincipal
             // 
@@ -194,5 +211,7 @@
         private ToolStripMenuItem sexoYinToolStripMenuItem;
         private ToolStripMenuItem aceptaciónToolStripMenuItem;
         private ToolStripMenuItem poderEnElMundoToolStripMenuItem;
+        private ToolStripSeparator toolStripSeparator1;
+        private ToolStripMenuItem leySupremaDeLaArmoníaPerfectaChakrasToolStripMenuItem;
     }
 }

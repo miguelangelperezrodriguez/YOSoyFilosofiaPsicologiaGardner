@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Diagnostics.Contracts;
+using System.Text;
 
 namespace LibreriasEstructurasAlquimia
 {
@@ -218,6 +219,9 @@ namespace LibreriasEstructurasAlquimia
         private int indiceMenor = 0;
         private int indiceMayor = 0;
 
+
+        public static readonly string[] listaElementos = { "Air", "Water", "Earth", "Fire" };
+
         // Es elemento ?
         private bool EsElemento (TDatoYin valor)
         {
@@ -260,6 +264,23 @@ namespace LibreriasEstructurasAlquimia
             InsertarAlFinal("Cerussa", 0.0f, elemento3);
             InsertarAlFinal("Campbire", 0.0f, elemento3);
 
+        }
+
+        public static TDatoYin TraducirElemento(string elemento)
+        {
+            switch (elemento)
+            {
+                case "Air":
+                    return TDatoYin.Air;
+                case "Water":
+                    return TDatoYin.Water;
+                case "Earth":
+                    return TDatoYin.Earth;
+                case "Fire":
+                    return TDatoYin.Fire;
+                default:
+                    return TDatoYin.Fire;
+            }
         }
 
         // nroplaneta : 1 o 2.
