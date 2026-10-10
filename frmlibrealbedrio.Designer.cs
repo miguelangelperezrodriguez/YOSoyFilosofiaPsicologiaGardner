@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            label1 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            label5 = new Label();
             label4 = new Label();
             txtmedia = new TextBox();
             txtsuma = new TextBox();
@@ -43,10 +47,10 @@
             chksimulacion = new CheckBox();
             panel2 = new Panel();
             txtsalida = new TextBox();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label1 = new Label();
+            textBox6 = new TextBox();
+            textBox7 = new TextBox();
+            label8 = new Label();
+            label9 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -54,6 +58,10 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(192, 255, 192);
+            panel1.Controls.Add(label9);
+            panel1.Controls.Add(label8);
+            panel1.Controls.Add(textBox7);
+            panel1.Controls.Add(textBox6);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(label6);
@@ -73,8 +81,44 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(821, 168);
+            panel1.Size = new Size(821, 220);
             panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(250, 104);
+            label1.Name = "label1";
+            label1.Size = new Size(111, 15);
+            label1.TabIndex = 17;
+            label1.Text = "Emoción. Disciplina";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(250, 133);
+            label7.Name = "label7";
+            label7.Size = new Size(124, 15);
+            label7.TabIndex = 16;
+            label7.Text = "Acción. Alta Vibración";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(250, 80);
+            label6.Name = "label6";
+            label6.Size = new Size(206, 15);
+            label6.TabIndex = 15;
+            label6.Text = "Emoción. Alta vibración / Fe. Enfoque";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(250, 51);
+            label5.Name = "label5";
+            label5.Size = new Size(166, 15);
+            label5.TabIndex = 14;
+            label5.Text = "Pensamiento. Disciplina Diaria";
             // 
             // label4
             // 
@@ -123,7 +167,7 @@
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(100, 23);
             textBox5.TabIndex = 8;
-            textBox5.Text = "0";
+            textBox5.Text = "0.40";
             textBox5.TextAlign = HorizontalAlignment.Right;
             // 
             // textBox4
@@ -132,7 +176,7 @@
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(100, 23);
             textBox4.TabIndex = 7;
-            textBox4.Text = "0";
+            textBox4.Text = "0.50";
             textBox4.TextAlign = HorizontalAlignment.Right;
             // 
             // textBox3
@@ -141,7 +185,7 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(100, 23);
             textBox3.TabIndex = 6;
-            textBox3.Text = "0";
+            textBox3.Text = "0.50";
             textBox3.TextAlign = HorizontalAlignment.Right;
             // 
             // textBox2
@@ -150,7 +194,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(100, 23);
             textBox2.TabIndex = 5;
-            textBox2.Text = "0";
+            textBox2.Text = "0.60";
             textBox2.TextAlign = HorizontalAlignment.Right;
             // 
             // textBox1
@@ -159,7 +203,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(99, 23);
             textBox1.TabIndex = 4;
-            textBox1.Text = "0";
+            textBox1.Text = "0.75";
             textBox1.TextAlign = HorizontalAlignment.Right;
             // 
             // btnejecutar
@@ -186,9 +230,9 @@
             // 
             panel2.Controls.Add(txtsalida);
             panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(0, 168);
+            panel2.Location = new Point(0, 220);
             panel2.Name = "panel2";
-            panel2.Size = new Size(821, 264);
+            panel2.Size = new Size(821, 212);
             panel2.TabIndex = 1;
             // 
             // txtsalida
@@ -198,44 +242,44 @@
             txtsalida.Multiline = true;
             txtsalida.Name = "txtsalida";
             txtsalida.ScrollBars = ScrollBars.Vertical;
-            txtsalida.Size = new Size(821, 264);
+            txtsalida.Size = new Size(821, 212);
             txtsalida.TabIndex = 0;
             // 
-            // label5
+            // textBox6
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(250, 51);
-            label5.Name = "label5";
-            label5.Size = new Size(166, 15);
-            label5.TabIndex = 14;
-            label5.Text = "Pensamiento. Disciplina Diaria";
+            textBox6.Location = new Point(144, 159);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(100, 23);
+            textBox6.TabIndex = 18;
+            textBox6.Text = "0.60";
+            textBox6.TextAlign = HorizontalAlignment.Right;
             // 
-            // label6
+            // textBox7
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(250, 80);
-            label6.Name = "label6";
-            label6.Size = new Size(156, 15);
-            label6.TabIndex = 15;
-            label6.Text = "Emoción. Alta vibración / Fe";
+            textBox7.Location = new Point(143, 188);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(100, 23);
+            textBox7.TabIndex = 19;
+            textBox7.Text = "1.0";
+            textBox7.TextAlign = HorizontalAlignment.Right;
             // 
-            // label7
+            // label8
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(250, 133);
-            label7.Name = "label7";
-            label7.Size = new Size(532, 15);
-            label7.TabIndex = 16;
-            label7.Text = "Manifestación. Cristalización Física vs \"Disolución mental;fluidez energética; Retorno al estado sútil\"";
+            label8.AutoSize = true;
+            label8.Location = new Point(250, 162);
+            label8.Name = "label8";
+            label8.Size = new Size(101, 15);
+            label8.TabIndex = 20;
+            label8.Text = "Acción. Disciplina";
             // 
-            // label1
+            // label9
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(250, 104);
-            label1.Name = "label1";
-            label1.Size = new Size(157, 15);
-            label1.TabIndex = 17;
-            label1.Text = "Acción. Ejecución imparable";
+            label9.AutoSize = true;
+            label9.Location = new Point(250, 191);
+            label9.Name = "label9";
+            label9.Size = new Size(82, 15);
+            label9.TabIndex = 21;
+            label9.Text = "Manifestación";
             // 
             // frmlibrealbedrio
             // 
@@ -275,5 +319,9 @@
         private Label label7;
         private Label label6;
         private Label label5;
+        private TextBox textBox7;
+        private TextBox textBox6;
+        private Label label9;
+        private Label label8;
     }
 }

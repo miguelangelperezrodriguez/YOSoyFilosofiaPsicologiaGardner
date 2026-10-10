@@ -65,11 +65,23 @@ namespace YOSoyFilosofiaPsicologiaGardner
             // Simulación es con valor 0 en la caja
             if (chksimulacion.Checked)
             {
-                textBox1.Text = "0";
-                textBox2.Text = "0";
-                textBox3.Text = "0";
-                textBox4.Text = "0";
-                textBox5.Text = "0";
+                Random random = new Random();
+
+                double numeroAleatorio = random.NextDouble();
+                textBox1.Text = numeroAleatorio.ToString();
+                numeroAleatorio = random.NextDouble();
+                textBox2.Text = numeroAleatorio.ToString();
+                numeroAleatorio = random.NextDouble();
+                textBox3.Text = numeroAleatorio.ToString();
+                numeroAleatorio = random.NextDouble();
+                textBox4.Text = numeroAleatorio.ToString();
+                numeroAleatorio = random.NextDouble();
+                textBox5.Text = numeroAleatorio.ToString();
+                numeroAleatorio = random.NextDouble();
+                textBox6.Text = numeroAleatorio.ToString();
+                numeroAleatorio = random.NextDouble();
+                textBox7.Text = numeroAleatorio.ToString();
+
             }
 
             string saux,saux_punto;
@@ -93,6 +105,14 @@ namespace YOSoyFilosofiaPsicologiaGardner
             sb.AppendLine(saux_punto);
 
             saux = textBox5.Text;
+            saux_punto = saux.Replace(",", ".");
+            sb.AppendLine(saux_punto);
+
+            saux = textBox6.Text;
+            saux_punto = saux.Replace(",", ".");
+            sb.AppendLine(saux_punto);
+
+            saux = textBox7.Text;
             saux_punto = saux.Replace(",", ".");
             sb.AppendLine(saux_punto);
 

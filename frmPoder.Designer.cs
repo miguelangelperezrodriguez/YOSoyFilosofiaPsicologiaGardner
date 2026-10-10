@@ -58,6 +58,7 @@
             label1 = new Label();
             panel2 = new Panel();
             txtsalida = new TextBox();
+            label15 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -65,6 +66,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(192, 255, 192);
+            panel1.Controls.Add(label15);
             panel1.Controls.Add(btnevaluar);
             panel1.Controls.Add(label14);
             panel1.Controls.Add(txtprogramacion_Meta);
@@ -361,6 +363,16 @@
             txtsalida.Size = new Size(720, 263);
             txtsalida.TabIndex = 0;
             // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label15.Location = new Point(140, 224);
+            label15.Name = "label15";
+            label15.Size = new Size(91, 15);
+            label15.TabIndex = 27;
+            label15.Text = "Tablas Alquimia";
+            // 
             // frmPoder
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -409,5 +421,6 @@
         private Button btnevaluar;
         private Panel panel2;
         private TextBox txtsalida;
+        private Label label15;
     }
 }

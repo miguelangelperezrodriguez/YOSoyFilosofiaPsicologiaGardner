@@ -52,5 +52,48 @@ namespace YOSoyFilosofiaPsicologiaGardner
             frmPoder frm = new frmPoder();
             frm.ShowDialog();
         }
+
+        private void leySupremaDeLaArmoníaPerfectaChakrasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmArmonia frm = new frmArmonia();
+            frm.ShowDialog();
+        }
+
+        private void borradoDeCristalizacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmborradoCristalizaciones frm = new frmborradoCristalizaciones();
+            frm.ShowDialog();
+        }
+
+        private void metanoiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmtratamiento frm = new frmtratamiento();
+            frm.ShowDialog();
+        }
+
+        private void reglasCorrespondenciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmreglascorrespondencia frm = new frmreglascorrespondencia();
+            frm.ShowDialog();
+        }
+
+        private void leyDeRitmoRecaídasMentalesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmrecaidasmentales frm = new frmrecaidasmentales();
+            frm.ShowDialog();
+        }
+
+        private void pipelinePasosTratamientoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmpipeline frm = new frmpipeline();
+            frm.ShowDialog();
+        }
+
+        private void amorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmamor frm = new frmamor();
+            frm.ShowDialog();
+
+        }
     }
 }
